@@ -1,0 +1,49 @@
+.service-toggle {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+.service-toggle input {
+    position: absolute !important;
+    clip-path: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 1px;
+    overflow: hidden;
+}
+
+.service-toggle label {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    line-height: 1;
+    text-align: center;
+    padding: 30px 30px;
+    margin-right: -1px;
+    margin-top: 1%;
+    border: 2px solid black;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.service-toggle label:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(250, 250, 250, 0.3);
+}
+
+.service-toggle input:checked + label {
+    background-color:rgba(255, 255, 100, 0.8);
+    color: black;
+}
+
+.service-toggle label:first-of-type {
+    border-radius: 3px 0 0 3px;
+}
+
+.service-toggle label:last-of-type {
+    border-radius: 0 3px 3px 0;
+}

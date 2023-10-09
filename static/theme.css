@@ -7,6 +7,7 @@
     --greenishBlue: #94AF9F;
     --greener: #9DC08B;
     --greenerer: #609966;
+    --white: #FFFFFF;
 }
 /****************** Color Variables End ******************/
 
@@ -19,7 +20,7 @@
     height: 100%;
     padding: 0; 
     margin: 0;
-    background: #FFEEBB;
+    background: var(--white);
     overflow-x: hidden;
 }
 
@@ -270,9 +271,9 @@
   margin-bottom: 1%;
 }
 .straight-container {
-    display: flex;
-    float: left;
-/*   position: absolute; */
+/*     display: flex;
+    float: left; */
+  position: absolute;
   transform: skewY(-3deg);
 }
 

@@ -270,6 +270,7 @@
   margin-bottom: 1%;
 }
 .straight-container {
+    display: flex;
   position: absolute;
   transform: skewY(-3deg);
 }

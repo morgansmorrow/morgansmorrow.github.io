@@ -272,7 +272,7 @@
 .straight-container {
     display: flex;
     float: left;
-  position: absolute;
+/*   position: absolute; */
   transform: skewY(-3deg);
 }
 

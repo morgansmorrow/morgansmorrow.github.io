@@ -252,7 +252,7 @@
 .div-color-stripe {
   display: block;
   background-color: var(--greenishBlue);
-  transform: skewY(3deg);
+  /* transform: skewY(3deg); */
   min-height: 200px;
   position: relative;
   /* opacity: 0.5; */
@@ -265,7 +265,7 @@
   background-color: var(--greenishBlue);
   opacity: 0.5;
   z-index: -1;
-  transform: skewY(4deg);
+  /* transform: skewY(4deg); */
   min-height: 50px;
   position: relative;
   margin-bottom: 1%;
@@ -274,7 +274,7 @@
 /*     display: flex;
     float: left; */
   position: absolute;
-  transform: skewY(-3deg);
+  /* transform: skewY(-3deg); */
 }
 
 .stripe-div-label {

@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./static/theme.css">
+        <link rel="stylesheet" href="./static/toggle_services.css">
+    </head>
+
+    <body class="body">
+
+        {% include 'nav.html' %}
+
+        <div class="service-toggle">
+            <input id="heatPumpRadio" name="service-radio" type="radio" value="heatPump" onclick="location.href='/heat_pump'">
+            <label for="heatPumpRadio">Heat Pump</label>
+            <input id="homeRadio" name="service-radio" type="radio" value="home">
+            <label for="homeRadio">Home</label>
+            <input id="generatorRadio" name="service-radio" type="radio" value="generator">
+            <label for="generatorRadio">Generator</label>
+        </div>
+        
+    
+        <script type="text/javascript" src="{{ url_for( 'static', filename = '/include.js' ) }}"></script>
+        <script> includeHTML() </script>
+    </body>
+</html>

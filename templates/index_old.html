@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Dave's Home Services</title>
-    <link rel="stylesheet" href="/static/theme.css">
+    <link rel="stylesheet" href="./static/theme.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
    
   </head>
@@ -12,37 +12,15 @@
   <body class="body" id="body" onload="run_auto(slideIndex=null)">
     
     <!-- Including navigation HTML template -->
-    <!-- {% include 'nav.html' %} -->
-    <nav class="top-nav-container">
-      <img src="/static/logo.png">
-      <div>
-          <label>Dave's Home Services</label>
-      </div>
-      <!-- <label>&#8212;</label>
-      <label>Formerly Dave's Electric</label> --> 
-      <div style="right: 0; top:15%;">
-          <a href="#aboutContainer" class="nav-elements">About Us</a>
-          <!-- <a href="/" class="nav-elements" onclick="current_nav(1)">Bookings</a> -->
-          <a href="#body" class="nav-elements">Home</a>
-      </div>
-  </nav>
-
+    {% include 'nav.html' %}
+    
     <div class="title-container">
       <!-- <label class="label-page-title">Dave's Home Services</label> -->
     </div>
 
     <!-- Offered Services -->
     <div class="div-color-stripe">
-      <div class="services-container">
-        <div class="desc-container">
-          <label>Mini-Split Heat Pump Installation and Maintenance</label>
-          <div>
-            <img src="/static/heatPump.png">
-          </div>
-        </div>
-        
-      </div>
-      <!-- <div class="straight-container" style="left: 5%; margin-top: 3%;">
+      <div class="straight-container" style="left: 5%; margin-top: 3%;">
         <label class="stripe-div-label" style="font-size:23px;">Providing testing if this is straight</label>
       </div>
       <div class="straight-container" style="left: 30%; margin-top: 5%;">
@@ -59,7 +37,7 @@
       </div>
       <div class="straight-container" style="left: 85%; margin-top: 8%;">
         <label class="stripe-div-label">Generac Generators</label>
-      </div> -->
+      </div>
       <div class="div-color-stripe-accent" style="transform: skewY(-2deg); min-height: 200px;"></div>
     </div>
 
@@ -144,7 +122,11 @@
           <img src="/static/Dave'sPics/afterService.jpeg">
           <div class="img-caption">Service Completed</div>
         </div>
-  </div>
+
+        <!-- Next and previous buttons
+        <a class="prev" onclick="plusSlides(-1)" style="left:0;margin-left:20%;">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" style="right:0;margin-right: 20%;">&#10095;</a> -->
+      </div>
      
 
       <!-- The dots/circles for image position indication within the gallery -->
@@ -170,22 +152,21 @@
         <label>Dave and Lenny have a combined 60 years of electrical experience. </label>
         <div style="min-height:30px;"></div>
         <div><label>
-          Dave Morrow has been contracting Dave's Electric (now Dave's Home Services) for 15 years. Dave has a Maine Limited Master's license. He retired from Bath Iron Works as an electrician after 31 years. 
+          Dave Morrow has been contracting Dave's Electric (now Dave's Home Services) for X years. He retired from Bath Iron Works as an electrician after Y years. 
           In his free time, Dave enjoys fly fishing, as well as building fly rods and tying flies.
         </label></div>
         <div style="min-height:30px;"></div>
         <label>
-          Lenny Hosford recently joined the Dave's Home Sevices team, but has been contracting licenced electrical work with Hosford's Electric for 30 years. 
-          Lenny has a Maine Limited Master's and Universal EPA. In his free time, Lenny enjoys spending time hunting with his bird dogs, as well as many other outdoor sporting activities.
+          Lenny Hosford recently joined the Dave's Home Sevices team, but has been contracting licenced electrical work with Hosford's Electric for X years. In his free time, Lenny enjoys spending time hunting. I dont know much about Lenny.
         </label>
       </div>
     </div>
 
 
-    <script type="text/javascript" src="static/include.js"></script> 
-    <script type="text/javascript" src="static/backend.js"></script> 
+    <script type="text/javascript" src="{{ url_for( 'static', filename = '/include.js' ) }}"></script>
+    <script type="text/javascript" src="{{ url_for( 'static', filename = '/backend.js' ) }}"></script>
 
-    <!-- <script> includeHTML() </script> -->
+    <script> includeHTML() </script>
   </body> 
 </html>
 

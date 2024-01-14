@@ -139,6 +139,7 @@
 
 .initial-prompt-container {
   margin-top: 10vh;
+  width: 100%;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -146,6 +147,7 @@
 .services-container{
   padding-top: 10vh;
   margin-bottom: 3%;
+  width: 100%;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-image: linear-gradient(var(--mdGr), var(--wht))
@@ -200,6 +202,7 @@
 .slideshow-container {
   position: relative;
   display: block;
+  width: 100%;
   align-items: center;
   text-align: center;
   padding-top: 5vh;
@@ -208,8 +211,8 @@
 
 /* slideshow images */
 .slideshow-container img{
-    width: clamp(90vw, 60vh, 60vh);
-    height: clamp(90vw, 60vh, 60vh);
+    width: clamp(60vw, 60vh, 60vh);
+    height: clamp(60vw, 60vh, 60vh);
 }
 
 /* Caption image */

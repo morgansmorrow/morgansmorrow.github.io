@@ -15,8 +15,21 @@
 
   <body class="body" id="body" onload="run_auto(slideIndex=null)">
     <!-- Including navigation HTML template -->
-    {% include 'nav.html' %}
-
+    <!-- {% include 'nav.html' %} -->
+    <nav class="top-nav-container">
+      <img src="/static/images/bolt.png">
+      <div>
+          <label>Dave's Electrical Home Services</label>
+      </div>
+      <!-- <label>&#8212;</label>
+      <label>Formerly Dave's Electric</label> --> 
+      <div style="right: 0; top:15%;">
+          <a href="#aboutContainer" class="nav-elements">About Us</a>
+          <a href="#services-container" class="nav-elements">Contact Us</a>
+          <!-- <a href="/" class="nav-elements" onclick="current_nav(1)">Bookings</a> -->
+          <a href="#body" class="nav-elements">Home</a>
+      </div>
+    </nav>
     <div class="initial-prompt-container">
       <label class="services-label">With over 60 years of combined experience, Dave's Electrical Home Services will support your electrical endevors. Done once, and done right! </label>
     </div>

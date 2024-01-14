@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dave's Electrical Home Services</title>
+    <link rel="stylesheet" href="./static/theme.css">
+    <link rel="icon" href="images/bolt.png">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+    <!-- social media icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body class="body" id="body" onload="run_auto(slideIndex=null)">
+  <!-- Including navigation HTML template -->
+  {% include 'nav.html' %}
+
+    <div class="initial-prompt-container">
+      <label class="services-label">With over 60 years of combined experience, Dave's Electrical Home Services will support your electrical endevors. Done once, and done right! </label>
+    </div>
+
+    <div class="slideshow-container">
+      <div>
+        <!-- Images with caption text -->
+        
+        <div class="slide-img-container fade">
+          <div><label class="img-caption">Generac Auto-Start Generator</label></div>
+          <img class="framed" src="/static/Dave'sPics/generac_generator.jpeg">
+        </div>
+
+        <div class="slide-img-container fade">
+          <div><label class="img-caption">Breaker Panel Interior</label></div>
+          <img class="framed" src="/static/Dave'sPics/afterBreaker.jpeg">
+        </div>
+
+        <div class="slide-img-container fade">
+          <div><label class="img-caption">Breaker Panel Exterior</label></div>
+          <img class="framed" src="/static/Dave'sPics/afterBreakerBox.jpeg">
+        </div>
+
+        <div class="slide-img-container fade">
+          <div><label class="img-caption">Heat Pump Exterior</label></div>
+          <img class="framed" src="/static/Dave'sPics/afterHeatpmpHead.jpeg">
+        </div>
+
+        <div class="slide-img-container fade">
+          <div><label class="img-caption">Heat Pump Interior</label></div>
+          <img class="framed" src="/static/Dave'sPics/afterHeatPmp.jpeg">
+        </div>
+
+        <div class="slide-img-container fade">
+          <div><label class="img-caption">Auto Start Generator</label></div>
+          <img class="framed" src="/static/Dave'sPics/afterGen.jpeg">
+        </div>
+
+        <div class="slide-img-container fade">
+          <div><label class="img-caption">Service Completed</label></div>
+          <img class="framed" src="/static/Dave'sPics/afterService.jpeg">
+        </div>
+
+      </div>
+    
+
+      <!-- The dots/circles for image position indication within the gallery -->
+      <div style="text-align:center; padding-bottom: 5%; bottom: 0;">
+          <span class="img-position-indication" onclick="current_slide(1)"></span>
+          <span class="img-position-indication" onclick="current_slide(2)"></span>
+          <span class="img-position-indication" onclick="current_slide(3)"></span>
+          <span class="img-position-indication" onclick="current_slide(4)"></span>
+          <span class="img-position-indication" onclick="current_slide(5)"></span>
+          <span class="img-position-indication" onclick="current_slide(6)"></span>
+          <span class="img-position-indication" onclick="current_slide(7)"></span>
+          <!-- <span class="img-position-indication" onclick="current_slide(8)"></span> -->
+      </div>
+    </div>
+
+  <!-- Services Container -->
+    <div id="services-container" class="services-container" style="padding-top: 2vh;">
+    
+      <div>
+        <div style="margin-top: 5vh;"><label class="services-label">Services</label></div>
+        <div style="margin-top: 2vh;"><label class="services-description-label">Whether you are starting new construction, planning some renovations, or looking to update your home,</label></div>
+        <div style="margin-top: 2vh;"><label class="services-description-label">Dave and Lenny are the electricians to transform your space!</label></div>
+        <div style="margin-top: 5vh;"><label class="services-label" style="font-size: clamp(1.25rem, 2vw + 0.75rem, 1.75rem); margin-top: 3vh;"> Augusta Area:</label></div>
+        <div style="margin-top: 2vh;"><label class="services-description-label">Dave's Electric: text <a href="text:+2074583488">207-458-3488</a> or call <a href="tel:+2074583488">207-441-4367</a></label></div>
+        <div style="margin-top: 5vh;"><label class="services-label" style="font-size: clamp(1.25rem, 2vw + 0.75rem, 1.75rem);"> Brunswick Area:</label></div>
+        <div style="margin-top: 2vh; margin-bottom: 2vh;"><label class="services-description-label">Hosford Electric: call or text <a href="tel:+2073337908">207-333-7908 </a></label></div>
+      </div>
+
+      <div class="grid-container center-container" style="grid-row: 2; margin-top: 3vh;">
+
+        <div class="img-container grid-pos-1">
+          <img src="/static/images/heat_pump.png">
+          <div class="service-description">
+            <label>Heat Pump Installation</label>
+          </div>
+
+          <div class="service-description">
+              <label>Heat Pump Cleaning</label>
+          </div>
+        </div>
+
+
+        <div class="img-container grid-pos-2">
+          <img src="/static/images/house.png">
+          <div class="service-description">
+            <label>New Construction and Remodeling</label>
+          </div>
+
+          <div class="service-description">
+              <label>Service Updates</label>
+          </div>
+        </div>
+
+        <div class="img-container grid-pos-3">
+          <img src="/static/images/generator.png">
+          <div class="service-description">
+            <label>Generac Generator Installation</label>
+          </div>
+
+          <div class="service-description">
+              <label>Auto-start and Manual-start options</label>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="services-container" id="aboutContainer" style="background-image: linear-gradient(var(--wht), var(--mdGr)); margin-bottom: 0%;">
+      <div><label class="services-label">About Us</label></div>
+
+      <div class="service-description" style="margin-top: 4vh">
+        <label style="font-size:clamp(1rem, 1.5vw + 0.75rem, 1.5rem);">From one outlet to a two family home, there is no job too small!</label>
+      </div>
+
+      <div class="service-description" style="margin-top: 4vh">
+        <label>Dave and Lenny have a combined 60 years of electrical experience.</label>
+      </div>
+
+      <div class="service-description" style="margin-top: 4vh">
+        <label>Dave Morrow has been contracting Dave's Electric (now Dave's Electrical Home Services) for over 30 years. He retired from Bath Iron Works as an electrician after 32 years. </label>
+      </div>
+      <div class="service-description">
+        <label>In his free time, Dave enjoys fly fishing, as well as building fly rods and tying flies.</label>
+      </div>
+        
+      <div class="service-description" style="margin-top: 4vh">
+        <label>Lenny Hosford recently joined the Dave's Home Sevices team, but has been contracting licenced electrical work with Hosford's Electric for over 30 years. </label>
+      </div>
+      <div class="service-description">
+        <label>In his free time, Lenny enjoys spending time hunting.</label>
+      </div>
+      
+    </div>
+
+    <div class="services-container" style="margin-bottom: 0;">
+      <a href="https://www.facebook.com/daveselectric1/" target="_blank" class="fa fa-facebook" style="margin-bottom: 3vh;"></a>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for( 'static', filename = '/backend.js' ) }}"></script>
+  </body>
+
+</html>    

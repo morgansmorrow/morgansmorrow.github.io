@@ -125,7 +125,7 @@ background-color: var(--blu);
   display: block;
   margin: auto;
   height: clamp(60vw, 50vh, 80vw);
-  width: clamp(12vw, 43vh, 16vw);
+  width: clamp(48vw, 43vh, 64vw);
   opacity: .3;
 }
 
@@ -199,6 +199,7 @@ grid-template-columns: 1fr;
   float: left;
 
 }
+
 .rev-right {
     /* animations */
     animation: auto linear reveal-right both;
@@ -206,26 +207,26 @@ grid-template-columns: 1fr;
     animation-range: entry 50% cover 50%;
   
 }
+
 .service-description {
   text-align: center;
   align-items: center;
-  /* border: 1px solid var(--blu); */
   border-radius: 10px;
   background-color: var(--wht);
   padding: 5vh;
-
-  /* animations
-  animation: auto linear reveal both;
-  animation-timeline: view();
-  animation-range: entry 50% cover 50%; */
-
   margin: auto;
   float: left;
 
 }
 
+.service-description label {
+text-align: center;
+font-size: clamp(1rem, 1.5vw + 0.75rem, 1.5rem);
+font-weight: bold;
+}
+
 .elong-line{
-  width: clamp(15vw, 15vh, 20vw);
+  width: clamp(10vw, 15vh, 20vw);
   height: 5px;
   border: 1px solid var(--dk);
   /* border-radius: 10px; */
@@ -264,12 +265,6 @@ grid-template-columns: 1fr;
   to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
 }
 
-
-.service-description label {
-text-align: center;
-font-size: clamp(1rem, 1.5vw + 0.75rem, 1.5rem);
-font-weight: bold;
-}
 
 /************** Content Container End **************/
 

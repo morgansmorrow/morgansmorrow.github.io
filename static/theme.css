@@ -216,7 +216,6 @@ grid-template-columns: 1fr;
   padding: 5vh;
   margin: auto;
   float: left;
-
 }
 
 .service-description label {
@@ -404,6 +403,10 @@ color: white;
   }
   .small-image-container {
     display: none;
+  }
+
+  .service-description {
+    padding: 2vw;
   }
 }
 

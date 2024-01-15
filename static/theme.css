@@ -212,8 +212,8 @@
 
 /* slideshow images */
 .slideshow-container img{
-    width: clamp(30vw, 60vh, 60vh);
-    height: clamp(30vw, 60vh, 60vh);
+    width: clamp(30vw, 60vh, 90vw);
+    height: clamp(30vw, 60vh, 90vw);
 }
 
 /* Caption image */

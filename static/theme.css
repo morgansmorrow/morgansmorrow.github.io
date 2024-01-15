@@ -1,21 +1,21 @@
 /****************** Color Variables ******************/
 :root{
-    --green: #A0C49D;
-    --yellowish: #FFEEBB;
-    --blueish: #C2DEDC;
-    --grayishGreen: #AEC2B6;
-    --greenishBlue: #94AF9F;
-    --greener: #9DC08B;
-    --greenerer: #609966;
+  --green: #A0C49D;
+  --yellowish: #FFEEBB;
+  --blueish: #C2DEDC;
+  --grayishGreen: #AEC2B6;
+  --greenishBlue: #94AF9F;
+  --greener: #9DC08B;
+  --greenerer: #609966;
 
 
 
-    --ltGr: rgb(212, 237, 157);
-    --mdGr: rgb(100, 169, 123, 0.3);
-    --mdGrFull: rgb(100, 169, 123, 1);
-    --blu: rgb(58, 84, 101);
-    --dk: rgb(61, 57, 49);
-    --wht: #ffffff;
+  --ltGr: rgb(212, 237, 157);
+  --mdGr: rgb(100, 169, 123, 0.3);
+  --mdGrFull: rgb(100, 169, 123, 1);
+  --blu: rgb(58, 84, 101);
+  --dk: rgb(61, 57, 49);
+  --wht: #ffffff;
 }
 /****************** Color Variables End ******************/
 
@@ -25,109 +25,74 @@
 /****************** Overall Body Styling ******************/
 
 .body {
-    height: 100%;
-    width: 100%;
-    padding: 0; 
-    margin: 0;
-    background: var(--wht);
-    overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 0; 
+  margin: 0;
+  background: var(--wht);
+  overflow-x: hidden;
 }
 
 /****************** Overall Body Styling End ******************/
 
 
-@media (max-width: 1000px) {  
-  .grid-container {
-    text-align: center;
-    margin: 0, auto;
-  }
 
-  .img-container {
-    margin: 0, auto;
-    display: block;
-    text-align: center;
-  }
-
-  .grid-pos-1 {
-    grid-row: 3;
-  }
-  
-  .grid-pos-2 {
-    grid-row: 4;
-  }
-  
-  .grid-pos-3 {
-    grid-row: 5;
-  }
-
-  .top-nav-container a {
-    display: none;
-  }
-  .fa-size-mod {
-    padding: 10px;
-    font-size: 40px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-}
 
 /****************** Top Navigation Bar ******************/
 
 /* Top navigation bar with logo and <a> elements */
 .top-nav-container {
-    background: var(--wht);
-    overflow: hidden;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    position: sticky;
-    padding: 0%;
-    margin-bottom: 1%;
-    top:0;
-    z-index: 10;
-    justify-content: center;
-    min-height: 10vh;
+  background: var(--wht);
+  overflow: hidden;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: sticky;
+  padding: 0%;
+  margin-bottom: 1%;
+  top:0;
+  z-index: 10;
+  justify-content: center;
+  min-height: 10vh;
 }
 
 /* Top navigation logo */
 .top-nav-container img {
-    float: left;
-    margin: 1%;
-    width: clamp(8vh, 8vh + 0.75vh, 10vh);
-    height: clamp(8vh, 8vh + 0.75vh, 10vh);
+  float: left;
+  margin: 1%;
+  width: clamp(8vh, 8vh + 0.75vh, 10vh);
+  height: clamp(8vh, 8vh + 0.75vh, 10vh);
 }
 
 /* top navigation business label and containerizing div */
 .top-nav-container div{
-  top: 25%;
-  position: absolute;
-  margin-left: 10vh;
-  min-height: 10vh;
+top: 25%;
+position: absolute;
+margin-left: 10vh;
+min-height: 10vh;
 }
 
 .top-nav-container label {
-  font-size: clamp(1.5rem, 3vw + 0.75rem, 2.5rem);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  float: left;
+font-size: clamp(1.5rem, 3vw + 0.75rem, 2.5rem);
+font-family: Georgia, 'Times New Roman', Times, serif;
+float: left;
 }
 
 /* top navigation <a> elements */
 .top-nav-container a {
-    float: right;
-    color: var(--dk);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: clamp(1rem, 2vw + 0.75rem, 1.5rem);
+  float: right;
+  color: var(--dk);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw + 0.75rem, 1.5rem);
 }
 
 /* top navigation <a> elements active state */
 .top-nav-container a:active {
-    color: var(--dk);
+  color: var(--dk);
 }
 
 .top-nav-container a:hover {
-  color: var(--blu);
+color: var(--blu);
 }
 
 /****************** Top Navigation Bar End ******************/
@@ -138,56 +103,56 @@
 
 
 .initial-prompt-container {
-  margin-top: 10vh;
-  width: 100%;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+margin-top: 10vh;
+width: 100%;
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .services-container{
-  padding-top: 10vh;
-  margin-bottom: 3%;
-  width: 100%;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-image: linear-gradient(var(--mdGr), var(--wht))
+padding-top: 10vh;
+margin-bottom: 3%;
+width: 100%;
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-image: linear-gradient(var(--mdGr), var(--wht))
 }
 
 .services-label {
-  font-size: clamp(1.5rem, 2.5vw + 0.75rem, 2rem);
-  color: var(--dk);
-  margin-bottom: 3vh;
-  margin-top: 10vh;
+font-size: clamp(1.5rem, 2.5vw + 0.75rem, 2rem);
+color: var(--dk);
+margin-bottom: 3vh;
+margin-top: 10vh;
 }
 
 .services-description-label {
-  font-size: clamp(1rem, 2vw + 0.75rem, 1.5rem);
-  color: var(--dk);
-  margin-bottom: 5vh;
-  margin-top: 5vh;
+font-size: clamp(1rem, 2vw + 0.75rem, 1.5rem);
+color: var(--dk);
+margin-bottom: 5vh;
+margin-top: 5vh;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
+display: grid;
+grid-template-columns: auto auto auto;
 }
 
 .img-container img {
-  margin: 1%;
-  margin-left: auto;
-  margin-right: auto;
-  width: clamp(10rem, 10vw + 10rem, 15rem);
-  height: clamp(10rem, 10vw + 10rem, 15rem);
+margin: 1%;
+margin-left: auto;
+margin-right: auto;
+width: clamp(10rem, 10vw + 10rem, 15rem);
+height: clamp(10rem, 10vw + 10rem, 15rem);
 }
 
 .service-description {
-  text-align: center;
-  align-items: center;
+text-align: center;
+align-items: center;
 }
 
 .service-description label {
-  text-align: center;
-  font-size: clamp(.75rem, 1.5vw + 0.75rem, 1.25rem);
+text-align: center;
+font-size: clamp(.75rem, 1.5vw + 0.75rem, 1.25rem);
 }
 
 /************** Content Container End **************/
@@ -200,74 +165,74 @@
 
 /* Slideshow container */
 .slideshow-container {
-  position: relative;
-  display: block;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  padding-top: 5vh;
-  background-image: linear-gradient(var(--wht), var(--mdGr))
+position: relative;
+display: block;
+width: 100%;
+align-items: center;
+text-align: center;
+padding-top: 5vh;
+background-image: linear-gradient(var(--wht), var(--mdGr))
 }
 
 /* slideshow images */
 .slideshow-container img{
-    width: clamp(30vw, 60vh, 90vw);
-    height: clamp(30vw, 60vh, 90vw);
+  width: clamp(30vw, 60vh, 90vw);
+  height: clamp(30vw, 60vh, 90vw);
 }
 
 /* Caption image */
 .img-caption {
-  color: var(--blu);
-  font-size: clamp(1rem, 2vw + 0.75rem, 1.5rem);
+color: var(--blu);
+font-size: clamp(1rem, 2vw + 0.75rem, 1.5rem);
 }
 
 /* Hide the images by default */
 .slide-img-container {
-  display: none;
-  align-items: center;
-  text-align: center;
+display: none;
+align-items: center;
+text-align: center;
 }
 
 img.framed {
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  box-shadow:
-    -50px -50px 0 -40px var(--mdGrFull),
-    50px 50px 0 -40px var(--mdGrFull);
+margin-top: 1vh;
+margin-bottom: 1vh;
+box-shadow:
+  -50px -50px 0 -40px var(--mdGrFull),
+  50px 50px 0 -40px var(--mdGrFull);
 }
 
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 2s;
+animation-name: fade;
+animation-duration: 2s;
 }
 
 /* keyframes fade animation definition */
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+from {opacity: .4}
+to {opacity: 1}
 }
 
 /* The slideshow image position indicators */
 .img-position-indication {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
 }
 
 /* Image position indicator when active or hovered */
 .img-position-indication:hover {
-  background-color: var(--blu);
+background-color: var(--blu);
 }
 
 .active {
-  background-color: var(--dk);
+background-color: var(--dk);
 }
 /****************** Image Gallery End ******************/
 
@@ -275,25 +240,46 @@ img.framed {
 /****************** Social Media Icons ******************/
 /* Style all font awesome icons */
 .fa {
-  padding: 10px;
-  font-size: 20px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+padding: 10px;
+font-size: 20px;
+width: 20px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.7;
+opacity: 0.7;
 }
 
 /* Set a specific color for each brand */
 
 /* Facebook */
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+background: #3B5998;
+color: white;
 }
 
 /**************** Social Media Icons End ****************/
+
+@media (max-width: 1000px) {  
+  .grid-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 0, auto;
+  }
+
+  .top-nav-container a {
+    display: none;
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 40px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+}

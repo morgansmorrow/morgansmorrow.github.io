@@ -124,10 +124,8 @@ background-color: var(--blu);
   z-index: -1;
   display: block;
   margin: auto;
-  /* height: clamp(30vh, 40vw, 50vh);
-  width: clamp(30vh, 40vw, 50vh); */
-  height: 50vh;
-  width: 43vh;
+  height: clamp(60vw, 50vh, 80vw);
+  width: clamp(12vw, 43vh, 16vw);
   opacity: .3;
 }
 

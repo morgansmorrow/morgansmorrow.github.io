@@ -387,6 +387,10 @@ color: white;
 /**************** Social Media Icons End ****************/
 
 @media screen and (max-width: 1000px) {  
+  .body {
+    width: 90%;
+    
+  }
   .top-nav-label {
     font-size: clamp(16px, 10vw, 30px);
   }

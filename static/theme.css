@@ -384,7 +384,7 @@ color: white;
 
 @media (max-width: 1500px) {  
   .top-nav-container label {
-    font-size: clamp(.8em, .3vh, .85em);
+    font-size: clamp(3rem, .3vh, 3.2rem);
   }
   .grid-container {
     grid-template-columns: 1fr;

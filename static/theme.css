@@ -382,7 +382,7 @@ color: white;
 
 /**************** Social Media Icons End ****************/
 
-/* @media (max-width: 1000px) {  
+@media (screen and max-width: 1000px) {  
   .top-nav-label {
     font-size: 10vw;
   }
@@ -411,7 +411,7 @@ color: white;
   .service-description {
     padding: 2vw;
   }
-} */
+}
 
 
 

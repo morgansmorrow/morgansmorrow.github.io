@@ -80,7 +80,8 @@ function current_slide(n) {
   
 
 
-
-  function menuBarChange(x) {
-    x.classList.toggle("change");
-  }
+// alter the menu bar on small screens 
+// toggle between the X shape (where change == true) and hamburger menu (where change == false)
+function menuBarChange(x) {
+  x.classList.toggle("change");
+}

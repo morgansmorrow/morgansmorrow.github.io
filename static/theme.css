@@ -419,6 +419,8 @@ color: white;
   .menu-bar {
     display: inline-block;
     cursor: pointer;
+    right: 0;
+    margin-top: 15%;
   }
   
   .bar1, .bar2, .bar3 {

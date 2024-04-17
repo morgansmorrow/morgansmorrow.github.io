@@ -74,9 +74,9 @@ min-height: 10vh;
 }
 
 .top-nav-label {
-font-size: clamp(1.5rem, 3vw + 0.75rem, 2.5rem);
-font-family: Georgia, 'Times New Roman', Times, serif;
-float: left;
+  font-size: clamp(1.5rem, 3vw + 0.75rem, 2.5rem);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  float: left;
 }
 
 /* top navigation <a> elements */
@@ -382,7 +382,7 @@ color: white;
 
 /**************** Social Media Icons End ****************/
 
-@media (max-width: 1200px) {  
+@media (max-width: 1000px) {  
   .top-nav-label {
     font-size: 10vh;
   }

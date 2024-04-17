@@ -1,0 +1,28 @@
+.top-nav-label {
+    font-size: 10vw;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 0, auto;
+  }
+
+  .top-nav-container a {
+    display: none;
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .small-image-container {
+    display: none;
+  }
+
+  .service-description {
+    padding: 2vw;
+  }

@@ -418,7 +418,7 @@ color: white;
 
 
   .menu-bar {
-    display: inline-block;
+    display: block;
     cursor: pointer;
     right: 0;
     margin-top: 15%;

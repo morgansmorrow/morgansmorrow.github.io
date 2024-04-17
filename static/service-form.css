@@ -1,0 +1,28 @@
+.service-form {
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1%;
+}
+
+
+.service-form input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.service-form input[type=submit] {
+    width: 20%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

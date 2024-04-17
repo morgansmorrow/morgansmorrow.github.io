@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./static/service-form.css">
+    </head>
+    <body class="body">
+
+        {% include 'book_services.html' %}
+
+        <div class="service-form">
+            
+            <div>
+                <label>Service at:</label>
+                <input type="text" placeholder="location">
+            </div>
+
+            <div>
+                <input type="text" placeholder="First Name">
+            </div>
+
+            <div>
+                <input type="text" placeholder="Last Name">
+            </div>
+
+            <div>
+                <label>Contact Information</label>
+            </div>
+        
+        
+            <div>
+                <input type="text" placeholder="Email">
+            </div>
+        
+        
+            <div>
+                <input type="text" placeholder="Phone Number">
+            </div>
+        
+            <div>
+                <textarea rows="5" cols="10">Description:</textarea>
+            </div>
+
+            <input type="submit">
+            
+        </div>
+
+        <script type="text/javascript" src="{{ url_for( 'static', filename = '/include.js' ) }}"></script>
+        <script> includeHTML() </script>
+    </body>
+</html>

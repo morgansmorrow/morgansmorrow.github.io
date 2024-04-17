@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./static/theme.css">
+    </head>
+    <body>
+        <nav class="top-nav-container">
+            <img src="/static/images/bolt.png">
+            <div>
+                <label>Dave's Electrical Home Services</label>
+            </div>
+            <!-- <label>&#8212;</label>
+            <label>Formerly Dave's Electric</label> --> 
+            <div style="right: 0; top:15%;">
+                <a href="#aboutContainer" class="nav-elements">About Us</a>
+                <a href="#services-container" class="nav-elements">Contact Us</a>
+                <!-- <a href="/" class="nav-elements" onclick="current_nav(1)">Bookings</a> -->
+                <a href="#body" class="nav-elements">Home</a>
+            </div>
+        </nav>
+    </body>
+    <script type="text/javascript" src="{{ url_for( 'static', filename = '/nav.js' ) }}"></script>
+    
+</html>

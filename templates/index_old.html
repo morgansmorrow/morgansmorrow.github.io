@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dave's Home Services</title>
+    <link rel="stylesheet" href="./static/theme.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   
+  </head>
+
+  <body class="body" id="body" onload="run_auto(slideIndex=null)">
+    
+    <!-- Including navigation HTML template -->
+    {% include 'nav.html' %}
+    
+    <div class="title-container">
+      <!-- <label class="label-page-title">Dave's Home Services</label> -->
+    </div>
+
+    <!-- Offered Services -->
+    <div class="div-color-stripe">
+      <div class="straight-container" style="left: 5%; margin-top: 3%;">
+        <label class="stripe-div-label" style="font-size:23px;">Providing testing if this is straight</label>
+      </div>
+      <div class="straight-container" style="left: 30%; margin-top: 5%;">
+        <label class="stripe-div-label">Mini-Split Heat Pumps</label>
+      </div>
+      <div class="straight-container" style="left: 40%; margin-top: 7%;">
+        <label class="stripe-div-label">Heat Pump Cleaning</label>
+      </div>
+      <div class="straight-container" style="left: 55%; margin-top: 4.5%;">
+        <label class="stripe-div-label">Service Updates</label>
+      </div>
+      <div class="straight-container" style="left: 65%; margin-top: 6%;">
+        <label class="stripe-div-label">New Construction and Remodeling</label>
+      </div>
+      <div class="straight-container" style="left: 85%; margin-top: 8%;">
+        <label class="stripe-div-label">Generac Generators</label>
+      </div>
+      <div class="div-color-stripe-accent" style="transform: skewY(-2deg); min-height: 200px;"></div>
+    </div>
+
+    <!-- Motto: Done Right - Done Once -->
+    <div class="done-right-container" >
+      <label style="text-align:center;"> "Done Right - Done Once"</label>
+    </div>
+
+    <!-- Offered Services -->
+    <div class="services-container">
+        <a>Mini-Split Heat Pumps</a>
+        <label style="color: black;">&#183;</label>
+        <a>Heat Pump Cleaning</a>
+        <label style="color: black;">&#183;</label>
+        <a>Service Updates</a>
+        <label style="color: black;">&#183;</label>
+        <a>New Construction and Remodeling</a>
+        <label style="color: black;">&#183;</label>
+        <a>Generac Generators</a>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-container">
+      <label>Call Lenny: 
+        <a href="tel:+2073337908">(207)333-7908 </a>
+        &#183; Text Dave: 
+        <a href="text:+2074583488">(207)458-3488</a>
+      </label>
+    </div>
+    
+    <!-- Slideshow container for diagonal color stripe background -->
+    <div class=" div-color-stripe">
+      <div class="div-color-stripe-accent"></div>
+        <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Images with number and caption text -->
+        <div class="slide-img-container fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="/static/Dave'sPics/beforeBreakerB.jpeg">
+          <div class="img-caption">Breaker Panel Upon Arrival </div>
+        </div>
+
+        <div class="slide-img-container fade">
+          <div class="numbertext">2 / 8</div>
+          <img src="/static/Dave'sPics/before1.jpeg">
+          <div class="img-caption">Breaker Panel Wiring Upon Arrival</div>
+        </div>
+
+        <div class="slide-img-container fade">
+          <div class="numbertext">3 / 8</div>
+          <img src="/static/Dave'sPics/afterBreaker.jpeg">
+          <div class="img-caption">Breaker Panel Interior Completed</div>
+        </div>
+
+        <div class="slide-img-container fade">
+          <div class="numbertext">4 / 8</div>
+          <img src="/static/Dave'sPics/afterBreakerBox.jpeg">
+          <div class="img-caption">Breaker Panel Exterior Completed</div>
+        </div>
+
+        <div class="slide-img-container fade">
+          <div class="numbertext">5 / 8</div>
+          <img src="/static/Dave'sPics/afterHeatpmpHead.jpeg">
+          <div class="img-caption">Heat Pump Exterior</div>
+        </div>
+
+        <div class="slide-img-container fade">
+          <div class="numbertext">6 / 8</div>
+          <img src="/static/Dave'sPics/afterHeatPmp.jpeg">
+          <div class="img-caption">Heat Pump Interior</div>
+        </div>
+
+        <div class="slide-img-container fade">
+          <div class="numbertext">7 / 8</div>
+          <img src="/static/Dave'sPics/afterGen.jpeg">
+          <div class="img-caption">Auto Start Generator</div>
+        </div>
+
+        <div class="slide-img-container fade">
+          <div class="numbertext">8 / 8</div>
+          <img src="/static/Dave'sPics/afterService.jpeg">
+          <div class="img-caption">Service Completed</div>
+        </div>
+
+        <!-- Next and previous buttons
+        <a class="prev" onclick="plusSlides(-1)" style="left:0;margin-left:20%;">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" style="right:0;margin-right: 20%;">&#10095;</a> -->
+      </div>
+     
+
+      <!-- The dots/circles for image position indication within the gallery -->
+      <div style="text-align:center; transform: skewY(-3deg); padding-bottom: 5%; bottom: 0;">
+          <span class="img-position-indication" onclick="current_slide(1)"></span>
+          <span class="img-position-indication" onclick="current_slide(2)"></span>
+          <span class="img-position-indication" onclick="current_slide(3)"></span>
+          <span class="img-position-indication" onclick="current_slide(4)"></span>
+          <span class="img-position-indication" onclick="current_slide(5)"></span>
+          <span class="img-position-indication" onclick="current_slide(6)"></span>
+          <span class="img-position-indication" onclick="current_slide(7)"></span>
+          <span class="img-position-indication" onclick="current_slide(8)"></span>
+      </div>
+    </div>
+    
+    <div class="about-container" id="aboutContainer">
+      <div><label class="label-header">About Us</label></div>
+
+      <div class="about-content">
+        <div style="min-height:30px;"></div>
+        <label style="text-align: center;">No job too small!</label>
+        <div style="min-height:30px;"></div>
+        <label>Dave and Lenny have a combined 60 years of electrical experience. </label>
+        <div style="min-height:30px;"></div>
+        <div><label>
+          Dave Morrow has been contracting Dave's Electric (now Dave's Home Services) for X years. He retired from Bath Iron Works as an electrician after Y years. 
+          In his free time, Dave enjoys fly fishing, as well as building fly rods and tying flies.
+        </label></div>
+        <div style="min-height:30px;"></div>
+        <label>
+          Lenny Hosford recently joined the Dave's Home Sevices team, but has been contracting licenced electrical work with Hosford's Electric for X years. In his free time, Lenny enjoys spending time hunting. I dont know much about Lenny.
+        </label>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="{{ url_for( 'static', filename = '/include.js' ) }}"></script>
+    <script type="text/javascript" src="{{ url_for( 'static', filename = '/backend.js' ) }}"></script>
+
+    <script> includeHTML() </script>
+  </body> 
+</html>
+
+

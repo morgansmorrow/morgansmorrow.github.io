@@ -382,9 +382,9 @@ color: white;
 
 /**************** Social Media Icons End ****************/
 
-@media (max-width: 1500px) {  
+@media (max-width: 1200px) {  
   .top-nav-container label {
-    font-size: clamp(10vh, 15rem, 20vh);
+    font-size: 10vh;
   }
   .grid-container {
     grid-template-columns: 1fr;

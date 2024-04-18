@@ -2,6 +2,7 @@
 var autoSlidesInt  
 
 let slideIndex = 1;
+let n
 show_slides(slideIndex);
 
 // Next/previous controls
@@ -40,7 +41,6 @@ function show_slides(n) {
 function run_auto(SI){
     let slides = document.getElementsByClassName("slide-img-container");
     
-    let n = 1
 
     // if running automatically, start with n = 1
     if (SI == null) {

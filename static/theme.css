@@ -90,7 +90,7 @@
 }
 
 /* top navigation business label and containerizing div */
-.top-div {
+.top-nav-container div{
 top: 25%;
 position: absolute;
 margin-left: 10vh;

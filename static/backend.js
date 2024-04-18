@@ -38,7 +38,7 @@ function show_slides(n) {
 // run an auto scroll for images on display 
 // interval is cleared and restarted if user interacts with thumbnails 
 // calls show_slides function to increment scroll
-function run_auto(SI){
+function run_auto(SI, interval){
     let slides = document.getElementsByClassName("slide-img-container");
     
 
@@ -51,21 +51,23 @@ function run_auto(SI){
         n = SI + 1
     }
     
-    // interval assigned to variable for clearing
-    autoSlidesInt = setInterval(()=>{
+    if (interval == false) {
+      // interval assigned to variable for clearing
+      autoSlidesInt = setInterval(()=>{
 
-        // if the interval increases above the number of photos, reset the interval 
-        if (n > slides.length) {
-            n = 1
-        }
+          // if the interval increases above the number of photos, reset the interval 
+          if (n > slides.length) {
+              n = 1
+          }
 
-        // call show_slides to interval the photos 
-        show_slides(slideIndex = n)
+          // call show_slides to interval the photos 
+          show_slides(slideIndex = n)
 
-        // increase the index
-        n = n+1
+          // increase the index
+          n = n+1
 
-    }, 4000)
+      }, 4000)
+    }
 }
 
 
@@ -75,7 +77,7 @@ function run_auto(SI){
 function current_slide(n) {
     show_slides(slideIndex = n);
     clearInterval(autoSlidesInt)
-    setTimeout(()=>{run_auto(slideIndex)}, 3000)
+    setTimeout(()=>{run_auto(slideIndex, true)}, 3000)
   }
   
 

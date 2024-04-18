@@ -416,6 +416,12 @@ color: white;
   .top-nav-label {
     font-size: clamp(16px, 10vw, 30px);
   }
+
+  .me-overlay {
+    padding: 0; 
+    margin: auto;
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
     text-align: center;

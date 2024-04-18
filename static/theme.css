@@ -200,6 +200,7 @@ grid-template-columns: 1fr;
 .img-container {
   display: flex;
   align-items: center;
+  margin: auto;
   /* animations */
   animation: auto linear reveal both;
   animation-timeline: view();
@@ -407,7 +408,7 @@ color: white;
 
 @media screen and (max-width: 1000px) {  
   .body {
-    width: 90%;
+    width: 100%;
 
   }
   .top-nav-label {

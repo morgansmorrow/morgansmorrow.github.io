@@ -85,6 +85,8 @@
   margin: 1%;
   width: clamp(8vh, 8vh + 0.75vh, 10vh);
   height: clamp(8vh, 8vh + 0.75vh, 10vh);
+  margin: auto;
+
 }
 
 /* top navigation business label and containerizing div */
@@ -158,9 +160,13 @@ background-color: var(--blu);
   left: 50%; 
   transform: translate(-50%, -50%); 
   color: #fff; 
-  padding: 10px 20px; 
+  /* padding: 10px 20px;  */
   font-size: 20px; 
   text-align: center;
+
+
+float: right;
+padding:3vw 10vw 0 10vw;
 }
 
 .initial-prompt-container label{

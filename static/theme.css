@@ -200,6 +200,8 @@ background-color: var(--blu);
 display: grid;
 /* grid-template-columns: auto auto auto; */
 grid-template-columns: 1fr;
+margin-right: auto;
+margin-left:auto;
 }
 
 .img-container {

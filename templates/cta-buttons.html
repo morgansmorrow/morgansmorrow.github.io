@@ -1,0 +1,19 @@
+<!--
+  Component: CTA button pair (Call / Text)
+  Purpose:   The two main actions on the site. Reused in the hero and the
+             contact card. Side by side; stacked full-width under 400px.
+  Classes:   .cta, .cta--on-dark (use on spruce backgrounds), .btn,
+             .btn--primary, .btn--secondary, .icon
+  Slots:     none. Labels and numbers are fixed: Call Dave / Text Dave.
+  Variants:  default = on paper. Add .cta--on-dark inside the hero or contact card.
+-->
+<div class="cta">
+  <a class="btn btn--primary" href="tel:+12074414367">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+    Call Dave
+  </a>
+  <a class="btn btn--secondary" href="sms:+12074583488">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></svg>
+    Text Dave
+  </a>
+</div>

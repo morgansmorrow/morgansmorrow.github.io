@@ -1,0 +1,39 @@
+/* Layout concept: a work-truck door. A spruce band carries the name and the
+   call buttons, finished with one safety-yellow stripe. Below it, plain paper
+   pages read in a single column that opens up on wider screens. */
+:root {
+  /* Color */
+  --ink: #14241F;      /* body text */
+  --spruce: #1F3A33;   /* header, hero, footer, primary buttons */
+  --paper: #F4F6F2;    /* page background */
+  --steel: #56655F;    /* secondary text, icons */
+  --line: #D3DBD5;     /* borders; secondary text on spruce */
+  --volt: #F2C230;     /* the one accent; only on spruce or ink */
+
+  /* Type */
+  --font-display: "Archivo", "Arial Narrow", Arial, sans-serif;
+  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --display-stretch: 87%;
+
+  --fs-sm: 0.9rem;
+  --fs-base: clamp(1.0625rem, 1rem + 0.25vw, 1.125rem);
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --fs-xl: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem);
+  --fs-hero: clamp(2.25rem, 1.7rem + 2.6vw, 3.5rem);
+
+  /* Space */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  /* Shape and sizing */
+  --radius: 4px;
+  --shadow-card: 0 1px 2px rgb(20 36 31 / 0.10), 0 8px 24px rgb(20 36 31 / 0.12);
+  --stripe: 6px;
+  --measure: 65ch;
+  --wrap: 70rem;
+  --tap: 44px;
+}

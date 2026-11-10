@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Dave's Electric Styleguide</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87,700;87,800&family=Public+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="../static/css/tokens.css">
+  <link rel="stylesheet" href="../static/css/layout.css">
+  <link rel="stylesheet" href="../static/css/components.css">
+  <link rel="icon" href="../static/images/favicon.svg" type="image/svg+xml">
+  <!-- Styles for this page only (swatches and samples). Not used on the site. -->
+  <style>
+    .sg-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); gap: var(--space-3); margin: 0; padding: 0; list-style: none; }
+    .sg-swatch { display: flex; flex-direction: column; gap: var(--space-1); font-size: var(--fs-sm); }
+    .sg-chip { height: 4rem; border: 1px solid var(--line); border-radius: var(--radius); }
+    .sg-chip--ink { background: var(--ink); }
+    .sg-chip--spruce { background: var(--spruce); }
+    .sg-chip--paper { background: var(--paper); }
+    .sg-chip--steel { background: var(--steel); }
+    .sg-chip--line { background: var(--line); }
+    .sg-chip--volt { background: var(--volt); }
+    .sg-type { display: flex; flex-direction: column; gap: var(--space-3); }
+    .sg-type__hero { font-size: var(--fs-hero); }
+    .sg-type__xl { font-size: var(--fs-xl); }
+    .sg-type__lg { font-size: var(--fs-lg); }
+    .sg-type__sm { font-size: var(--fs-sm); }
+    .sg-label { color: var(--steel); font-size: var(--fs-sm); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+    .sg-demo { display: flex; flex-direction: column; gap: var(--space-3); }
+    .sg-dark { padding: var(--space-4); background: var(--spruce); border-radius: var(--radius); }
+  </style>
+</head>
+<body>
+  <main class="section">
+    <div class="wrap section__inner">
+      <header class="section__head">
+        <h1 class="section__title">Dave's Electric styleguide</h1>
+        <p class="section__intro">Every token and component on one page. Build new sections from the snippets in this folder. Not linked from the live site.</p>
+      </header>
+
+      <section class="sg-demo" aria-labelledby="sg-colors">
+        <h2 class="sg-label" id="sg-colors">Color tokens (static/css/tokens.css)</h2>
+        <ul class="sg-swatches">
+          <li class="sg-swatch"><span class="sg-chip sg-chip--ink"></span><code>--ink</code> body text</li>
+          <li class="sg-swatch"><span class="sg-chip sg-chip--spruce"></span><code>--spruce</code> bands, primary buttons</li>
+          <li class="sg-swatch"><span class="sg-chip sg-chip--paper"></span><code>--paper</code> page background</li>
+          <li class="sg-swatch"><span class="sg-chip sg-chip--steel"></span><code>--steel</code> secondary text</li>
+          <li class="sg-swatch"><span class="sg-chip sg-chip--line"></span><code>--line</code> borders</li>
+          <li class="sg-swatch"><span class="sg-chip sg-chip--volt"></span><code>--volt</code> accent, on spruce/ink only</li>
+        </ul>
+      </section>
+
+      <section class="sg-demo" aria-labelledby="sg-type">
+        <h2 class="sg-label" id="sg-type">Type scale (Archivo display / Public Sans body)</h2>
+        <div class="sg-type">
+          <h3 class="sg-type__hero">--fs-hero Done once, and done right.</h3>
+          <h3 class="sg-type__xl">--fs-xl Section title</h3>
+          <h3 class="sg-type__lg">--fs-lg Service name</h3>
+          <p>--fs-base Body text. Plain, warm and direct, the way Dave would talk to a neighbor.</p>
+          <p class="sg-type__sm">--fs-sm Notes, labels and footer text.</p>
+        </div>
+      </section>
+
+      <section class="sg-demo" aria-labelledby="sg-cta">
+        <h2 class="sg-label" id="sg-cta">CTA buttons (cta-buttons.html): default and on-dark</h2>
+        <div class="cta">
+          <a class="btn btn--primary" href="tel:+12074414367">Call Dave</a>
+          <a class="btn btn--secondary" href="sms:+12074583488">Text Dave</a>
+        </div>
+        <div class="sg-dark">
+          <div class="cta cta--on-dark">
+            <a class="btn btn--primary" href="tel:+12074414367">Call Dave</a>
+            <a class="btn btn--secondary" href="sms:+12074583488">Text Dave</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <p class="wrap sg-label">Site header (site-header.html)</p>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="#top">
+        <svg class="wordmark__bolt" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 2 4 14h7l-1.5 8L20 10h-7l.5-8z"/></svg>
+        <span>Dave's Electric</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="site-header__call" href="tel:+12074414367">207-441-4367</a>
+    </div>
+  </header>
+
+  <p class="wrap sg-label">Hero (hero.html)</p>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="hero__eyebrow">Electrician · Augusta area, Maine</p>
+        <h2 class="hero__title" id="hero-title">Done once, and done right.</h2>
+        <p class="hero__lead">Licensed electrical work for homes around Augusta, Maine, from a guy who's been doing it for over 30 years.</p>
+        <div class="cta cta--on-dark">
+          <a class="btn btn--primary" href="tel:+12074414367">Call Dave</a>
+          <a class="btn btn--secondary" href="sms:+12074583488">Text Dave</a>
+        </div>
+        <p class="hero__hours"><span>Mon–Fri 8:00 AM–5:00 PM</span> · <span>Sat 9:30 AM–2:30 PM</span> · <span>Closed Sunday</span></p>
+      </div>
+      <dl class="hero__facts">
+        <div class="hero__fact"><dt class="hero__fact-num">30+</dt><dd class="hero__fact-text">years running Dave's Electric</dd></div>
+        <div class="hero__fact"><dt class="hero__fact-num">32</dt><dd class="hero__fact-text">years as an electrician at Bath Iron Works</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="sg-services">
+    <div class="wrap section__inner">
+      <header class="section__head">
+        <p class="sg-label">Section (section.html) + service item (service-item.html)</p>
+        <h2 class="section__title" id="sg-services">Services</h2>
+        <p class="section__intro">Electrical work for homes around Augusta. Not sure if your job fits? Call and ask.</p>
+      </header>
+      <ul class="services">
+        <li class="service-item">
+          <svg class="service-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="1"/><circle cx="9" cy="12" r="4"/><path d="M9 8v8M5 12h8M16 9h3M16 12h3M16 15h3"/></svg>
+          <h3 class="service-item__title">Heat pumps</h3>
+          <p class="service-item__text">New heat pump installs, plus cleaning to keep the ones you have running well through a Maine winter.</p>
+          <p class="service-item__note">Installation · Cleaning</p>
+        </li>
+        <li class="service-item">
+          <svg class="service-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="7" width="20" height="12" rx="1"/><path d="M6 7V5h12v2M6 19v2M18 19v2"/><path d="m13 9-3 4h4l-3 4"/></svg>
+          <h3 class="service-item__title">Generac generators</h3>
+          <p class="service-item__text">Generac generator installs, so your lights and heat stay on when the power goes out.</p>
+          <p class="service-item__note">Auto-start and manual-start options</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="sg-about">
+    <div class="wrap section__inner section__inner--split">
+      <header class="section__head">
+        <p class="sg-label">Section split + bio (bio.html)</p>
+        <h2 class="section__title" id="sg-about">About Dave</h2>
+      </header>
+      <div class="bio">
+        <p class="bio__lead">Dave Morrow has run Dave's Electric for more than 30 years.</p>
+        <p>Before he retired, he spent 32 years as an electrician at Bath Iron Works.</p>
+        <h3 class="bio__subhead">Off the clock</h3>
+        <p>When he isn't working, Dave is usually fly fishing, building fly rods or tying flies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="sg-contact">
+    <div class="wrap section__inner">
+      <header class="section__head">
+        <p class="sg-label">Contact card (contact-card.html)</p>
+        <h2 class="section__title" id="sg-contact">Contact</h2>
+      </header>
+      <div class="contact-card">
+        <div class="contact-card__group">
+          <h3 class="contact-card__title">Call or text Dave</h3>
+          <div class="cta cta--on-dark">
+            <a class="btn btn--primary" href="tel:+12074414367">Call Dave</a>
+            <a class="btn btn--secondary" href="sms:+12074583488">Text Dave</a>
+          </div>
+          <dl class="contact-list">
+            <dt>Call</dt><dd><a href="tel:+12074414367">207-441-4367</a></dd>
+            <dt>Text</dt><dd><a href="sms:+12074583488">207-458-3488</a></dd>
+            <dt>Area</dt><dd>Augusta area, Maine</dd>
+          </dl>
+        </div>
+        <div class="contact-card__group">
+          <h3 class="contact-card__title" id="sg-hours">Hours</h3>
+          <table class="hours" aria-labelledby="sg-hours">
+            <tbody>
+              <tr><th scope="row">Monday–Friday</th><td>8:00 AM – 5:00 PM</td></tr>
+              <tr><th scope="row">Saturday</th><td>9:30 AM – 2:30 PM</td></tr>
+              <tr><th scope="row">Sunday</th><td class="hours__closed">Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p class="wrap sg-label">Site footer (site-footer.html)</p>
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div class="site-footer__block"><p class="site-footer__name">Dave's Electric</p><p>Electrician serving the Augusta area, Maine</p></div>
+      <div class="site-footer__block"><a href="tel:+12074414367">Call 207-441-4367</a><a href="sms:+12074583488">Text 207-458-3488</a></div>
+      <div class="site-footer__block"><p>Mon–Fri 8:00 AM–5:00 PM</p><p>Sat 9:30 AM–2:30 PM</p><p>Closed Sunday</p></div>
+      <div class="site-footer__block"><a href="https://www.facebook.com/daveselectric1/" rel="noopener">Dave's Electric on Facebook</a><p>© 2026 Dave's Electric</p></div>
+    </div>
+  </footer>
+
+  <script src="../static/js/menu.js" defer></script>
+</body>
+</html>

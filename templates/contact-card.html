@@ -1,0 +1,45 @@
+<!--
+  Component: Contact card
+  Purpose:   Everything needed to reach Dave: Call/Text buttons, numbers,
+             service area, Facebook and hours. The only element with a
+             shadow. One column on phones and tablets, two from 1024px.
+  Classes:   .contact-card, .contact-card__group, .contact-card__title,
+             .contact-list, .hours, .hours__closed
+  Slots:     numbers, area, Facebook link, hours rows
+  Contains:  templates/cta-buttons.html with .cta--on-dark
+-->
+<div class="contact-card">
+  <div class="contact-card__group">
+    <h3 class="contact-card__title">Call or text Dave</h3>
+    <div class="cta cta--on-dark">
+      <a class="btn btn--primary" href="tel:+12074414367">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Call Dave
+      </a>
+      <a class="btn btn--secondary" href="sms:+12074583488">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></svg>
+        Text Dave
+      </a>
+    </div>
+    <dl class="contact-list">
+      <dt>Call</dt>
+      <dd><a href="tel:+12074414367">207-441-4367</a></dd>
+      <dt>Text</dt>
+      <dd><a href="sms:+12074583488">207-458-3488</a></dd>
+      <dt>Area</dt>
+      <dd>Augusta area, Maine</dd>
+      <dt>Facebook</dt>
+      <dd><a href="https://www.facebook.com/daveselectric1/" rel="noopener">Dave's Electric page</a></dd>
+    </dl>
+  </div>
+  <div class="contact-card__group">
+    <h3 class="contact-card__title" id="hours-title">Hours</h3>
+    <table class="hours" aria-labelledby="hours-title">
+      <tbody>
+        <tr><th scope="row">Monday–Friday</th><td>8:00 AM – 5:00 PM</td></tr>
+        <tr><th scope="row">Saturday</th><td>9:30 AM – 2:30 PM</td></tr>
+        <tr><th scope="row">Sunday</th><td class="hours__closed">Closed</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>

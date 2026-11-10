@@ -1,0 +1,19 @@
+<!--
+  Component: Section wrapper
+  Purpose:   Standard page section: heading, optional intro, then content.
+             Sections after the first get a thin top border.
+  Classes:   .section, .wrap, .section__inner, .section__inner--split,
+             .section__head, .section__title, .section__intro
+  Slots:     id (nav anchor), title, intro (optional), content
+  Variants:  add .section__inner--split to put the heading in a left column
+             from 1024px (used for About).
+-->
+<section class="section" id="SECTION-ID" aria-labelledby="SECTION-ID-title">
+  <div class="wrap section__inner">
+    <header class="section__head">
+      <h2 class="section__title" id="SECTION-ID-title">Section title</h2>
+      <p class="section__intro">One or two plain sentences that introduce the section.</p>
+    </header>
+    <!-- Section content: service list, bio, contact card -->
+  </div>
+</section>

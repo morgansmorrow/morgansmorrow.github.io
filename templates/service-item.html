@@ -1,0 +1,18 @@
+<!--
+  Component: Service item (inside a .services list)
+  Purpose:   One service: icon tile, name, one plain sentence, short note.
+             The list is 1 column on phones and 2 from 600px.
+  Classes:   .services (the <ul>), .service-item, .service-item__icon,
+             .service-item__title, .service-item__text, .service-item__note
+  Slots:     icon <svg> (3 paths or fewer, stroke="currentColor"), title,
+             text, note (optional)
+  Icons in use: heat pump, house, panel, generator (see index.html)
+-->
+<ul class="services">
+  <li class="service-item">
+    <svg class="service-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="1"/><circle cx="9" cy="12" r="4"/><path d="M9 8v8M5 12h8M16 9h3M16 12h3M16 15h3"/></svg>
+    <h3 class="service-item__title">Service name</h3>
+    <p class="service-item__text">One plain sentence about the work.</p>
+    <p class="service-item__note">Short detail · Another detail</p>
+  </li>
+</ul>
